@@ -1,0 +1,115 @@
+body {
+  background-color: lightblue;
+}
+
+body {
+  background: rgb(0, 0, 0) url("/Users/romanlartigue/Downloads/solar.png") no-repeat fixed center;
+}
+#button1 {
+height: 50px;
+position: relative;
+top: 350px;
+left: 200px;
+
+}
+#button2 {
+  height: 65px;
+  position: relative;
+  top: 345px;
+  left: 450px;
+  border-radius: 60px;
+  background-color: Transparent;
+  }
+  #button3 {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 165px;
+    left: 454px;
+    border-radius: 60px;
+    background-color: Transparent;
+    }
+    #button4 {
+      height: 90px;
+      width: 90px;
+      position: relative;
+      top: 283px;
+      left: 450px;
+      border-radius: 60px;
+      background-color: transparent;
+      
+      }
+      #button5 {
+        height: 55px;
+        width: 55px;
+        position: relative;
+        top: 385px;
+        left: 429px;
+        border-radius: 60px;
+        background-color: transparent;
+        
+        }
+        #button6 {
+          height: 140px;
+          width: 142px;
+          position: relative;
+          top: 199px;
+          left: 436px;
+          border-radius: 60px;
+          background-color: transparent;
+          
+          }
+        #button7 {
+          height: 110px;
+          width: 112px;
+          position: relative;
+          top: 15px;
+          left: 393px;
+          border-radius: 60px;
+          background-color: transparent;
+            
+            }
+            #button8 {
+              height: 68px;
+              width: 68px;
+              position: relative;
+              top: 340px;
+              left: 407px;
+              border-radius: 60px;
+              background-color: transparent;
+              
+              }
+              #button9 {
+                height: 65px;
+                width: 68px;
+                position: relative;
+                top: 87px;
+                left: 390px;
+                border-radius: 60px;
+                background-color: transparent;
+                }
+                #button10 {
+                  height: 34px;
+                  width: 35px;
+                  position: relative;
+                  top: 214px;
+                  left: 412px;
+                  border-radius: 60px;
+                  background-color: transparent;
+                }
+                #button11 {
+                  height: 28px;
+                  width: 28px;
+                  position: relative;
+                  top: 218px;
+                  left: -95px;
+                  border-radius: 60px;
+                  background-color: transparent;
+                }
+                button:hover {
+                  border: 5px solid rgb(246, 255, 0);
+              }
+              body {
+                color: white;
+              }
+       

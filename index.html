@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Nasa Image Searcher </title>
+    <h1> Nasa Image</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleap.css">
+</head>
+<body>
+    <button id="button1">Sun</button>
+    <button id="button2">Mercury</button>
+    <button id="button3">Venus</button>
+    <button id="button4">Earth</button>
+    <button id="button5">Mars</button>
+    <button id="button6">Jupiter</button>
+    <button id="button7">Saturday</button>
+    <button id="button8">Uranus</button>
+    <button id="button9">Neptune</button>
+    <button id="button10">Pluto</button>
+    <button id="button11">Moon</button>
+
+    
+    <div class="nasa-container">
+        <div class="nasa-Header">
+        <img id="nasaImage" src="" alt="Nasa image">
+        </div>
+        <input type="text" id="nasainput" placeholder="Enter Planet Name">
+        <button onclick="getpicture()">Search</button>
+
+        <div class="container" id="nasacontainer" style="display: none;">
+        </div>
+
+        <p class="error-message" id="errorMessage"></p>
+    </div>
+
+    <script src="api.js"></script>
+
+</body>
+</html>
