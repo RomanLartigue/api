@@ -5,7 +5,7 @@ async function getpicture() {
     const nasainput = document.getElementById('nasainput').value.toLowerCase(); // Get input value
     const nasacontainer = document.getElementById('nasacontainer');
     const errorMessage = document.getElementById('errorMessage');
-
+    console.log(nasainput)
     // Clear previous data and errors
     nasacontainer.style.display = 'none';
     errorMessage.textContent = '';
@@ -18,6 +18,7 @@ async function getpicture() {
     try {
         // Fetch Pokémon data from PokéAPI
         const response = await fetch(`${apiUrl}${nasainput}`);
+        console.log(response)
         if (!response.ok) {
             throw new Error('Image not found');
         }
@@ -32,7 +33,10 @@ async function getpicture() {
 // Function to display Pokémon data
 function displaynasa(data) {
     const pokemonImage = document.getElementById('nasaImage');
+    console.log(pokemonImage)
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
 }
+
+//Parse Json collection --> Items --> link
