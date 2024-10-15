@@ -2,10 +2,11 @@ const apiUrl = 'https://images-api.nasa.gov/search?q=';
 
 // Function to fetch and display Pokémon data
 async function getpicture() {
-    const nasainput = document.getElementById('nasainput').value.toLowerCase(); // Get input value
     const nasacontainer = document.getElementById('nasacontainer');
     const errorMessage = document.getElementById('errorMessage');
+    const nasainput = document.getElementById('nasainput').value;
     console.log(nasainput)
+    
     // Clear previous data and errors
     nasacontainer.style.display = 'none';
     errorMessage.textContent = '';
@@ -18,13 +19,15 @@ async function getpicture() {
     try {
         // Fetch Pokémon data from PokéAPI
         const response = await fetch(`${apiUrl}${nasainput}`);
-        console.log(response)
         if (!response.ok) {
             throw new Error('Image not found');
         }
 
         const data = await response.json();
+        //console.log(data)
         displaynasa(data); // Call function to display Pokémon details
+
+
     } catch (error) {
         errorMessage.textContent = `Error: ${error.message}`;
     }
@@ -32,11 +35,21 @@ async function getpicture() {
 
 // Function to display Pokémon data
 function displaynasa(data) {
-    const pokemonImage = document.getElementById('nasaImage');
-    console.log(pokemonImage)
-        function capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-}
+    const nasaImage = document.getElementById('nasaImage');
+    const nasacontainer = document.getElementById('nasacontainer');
+    
+        nasaImage.src = ''; 
+        nasacontainer.style.display = 'none'; 
+        const errorMessage = document.getElementById('errorMessage');
+        errorMessage.textContent = 'No images found for this search.';
+    }
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
+// https://www.w3schools.com/tags/att_a_href.asp
+// https://www.w3schools.com/js/js_api_intro.asp
+//https://youtu.be/37vxWr0WgQk?si=FNM2fMGR_0frXsp5
+//https://youtu.be/VaDUGPMjzOM?si=HCoezaSyn9QG8qZf
+//https://www.w3schools.com/python/ref_dictionary_items.asp
+//https://stackoverflow.com/questions/300522/count-vs-length-vs-size-in-a-collection
 
 //Parse Json collection --> Items --> link
