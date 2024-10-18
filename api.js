@@ -24,7 +24,7 @@ async function getpicture() {
         }
 
         const data = await response.json();
-        //console.log(data)
+        console.log(data[0].collection)
         displaynasa(data); // Call function to display Pokémon details
 
 
@@ -43,8 +43,7 @@ function displaynasa(data) {
         const errorMessage = document.getElementById('errorMessage');
         errorMessage.textContent = 'No images found for this search.';
     }
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
+// https://developer.duda.co/docs/collections-api
 // https://www.w3schools.com/tags/att_a_href.asp
 // https://www.w3schools.com/js/js_api_intro.asp
 //https://youtu.be/37vxWr0WgQk?si=FNM2fMGR_0frXsp5
